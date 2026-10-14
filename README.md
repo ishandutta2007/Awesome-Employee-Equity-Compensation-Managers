@@ -1,7 +1,7 @@
 # Awesome Employee Equity Compensation Managers 📈💎
 
 <p align="center">
-  <img src="assets/equity-comp-banner.svg" alt="Awesome Employee Equity Compensation Managers Banner" width="100%">
+  <img src="assets/banner.svg" alt="Awesome Employee Equity Compensation Managers Banner" width="100%">
 </p>
 
 <p align="center">

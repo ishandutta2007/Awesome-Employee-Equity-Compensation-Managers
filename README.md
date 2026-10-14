@@ -1,213 +1,117 @@
-# Awesome-Employee-Equity-Compensation-Managers
-
-## Top Employee Equity Compensation Managers Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Cap Table Management, Vesting Schedules & Dilution Modeling*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Employee Equity Compensation Management**. These tools enable HR teams, founders, and finance leaders to simulate complex tax and dilution curves, manage option pools, track vesting schedules, and structure equity compensation programs.
-
-
-
-**Examples** include Carta, Shareworks by Morgan Stanley, Pulley, Ledgy, Cake Equity, Global Shares, Eqvista, Captable.io, Qapita, and Certent (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, Git-native cap tables, and open equity management—ideal for startups, HR teams, and developers seeking transparent, vendor-independent equity infrastructure.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Carta](https://carta.com/)**  
-
-  The dominant equity management platform with comprehensive cap table management, 409A valuations, fund administration, employee equity plans, and investor portfolio management. Exposes four API suites—Launch, Investor, Issuer, and Portfolio—for programmatic access to cap table data . Trusted by 40,000+ companies and 1.5M+ stakeholders.
-
-
-
-- **[Shareworks by Morgan Stanley](https://www.shareworks.com/)**  
-
-  Enterprise equity compensation platform for private and public companies. Features cap table management, employee equity plans, global compliance, and financial reporting. Integrated with Morgan Stanley's wealth management ecosystem.
-
-
-
-- **[Pulley](https://pulley.com/)**  
-
-  Cap table management platform for startups and finance leaders. Provides a REST API for managing equity, modeling dilution, issuing options and RSUs, tracking SAFEs and convertible instruments, and generating investor and compliance reports . Known for transparent pricing and startup-friendly workflows.
-
-
-
-- **[Ledgy](https://ledgy.com/)**  
-
-  European equity-management platform for cap tables, ESOP/equity plans, stakeholder and investor relations, and financing rounds. The Ledgy GraphQL API exposes a company's cap table, transactions (convertibles, grants, transfers), share classes, and financing rounds . GDPR-native with strong European compliance.
-
-
-
-- **[Cake Equity](https://www.cakeequity.com/)**  
-
-  Equity management platform for startups and scaleups. Features cap table management, ESOP administration, and employee equity portals.
-
-
-
-- **[Global Shares](https://www.globalshares.com/)**  
-
-  Enterprise equity compensation and cap table management. Features global compliance, employee equity plans, and financial reporting for multi-jurisdiction operations.
-
-
-
-- **[Eqvista](https://eqvista.com/)**  
-
-  Cap table management, equity operations, share issuance, and 409A valuations. Features comprehensive equity management with user-friendly interface and cost efficiency .
-
-
-
-- **[Captable.io](https://captable.io/)**  
-
-  Free tool for cap table management and insights. Features user-friendly interface, comprehensive data management, collaboration features, and scenario modeling .
-
-
-
-- **[Qapita](https://www.qapita.com/)**  
-
-  Equity management platform for private markets in Asia. Features cap table management, ESOP administration, and stakeholder management.
-
-
-
-- **[Certent](https://certent.com/)**  
-
-  Equity compensation management platform. Features compliance automation, scalability, and data security for stock administration .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Captable, Inc.](https://github.com/captableinc/captable)**  
-
-  **The #1 open-source cap table management platform**, positioned as an alternative to Carta, Pulley, and AngelList (AGPL-3.0). **822 GitHub stars** . Built with TypeScript, Next.js, and Prisma . Features: **Cap Table Management** (track ownership structure, issued stock, options, convertible notes), **Fundraising** (manage investor commitments, sign standard/custom SAFE agreements, track progress), **Investor Updates** (send regular updates to investors and team members), **eSign Documents** (sign SAFEs, NDAs, contracts, offer letters via Captable Sign), and **Data Rooms** (secure virtual data room for sharing documents with investors, employees, and stakeholders) . Dockerized or local deployment . **The most feature-complete open-source equity management platform available.**
-
-
-
-- **[Captan](https://github.com/acossta/captan)**  
-
-  Lightweight, hackable CLI tool for managing startup cap tables (MIT). **Stores everything in a single JSON file** (`captable.json`) that can be version-controlled in Git . Features: **Stakeholder management** (founders, employees, investors), **Security classes** (Common, Preferred, Option Pool), **Share issuances**, **Option grants with vesting schedules** (monthly, cliff), **SAFE investments** (record + simulate conversion at priced round), **Cap table math** (Outstanding vs Fully Diluted), **CSV/JSON exports**, and **Audit log** ("the ship's log") . Interactive wizard for guided setup. JSON Schema validation with IDE autocomplete support . **The most developer-friendly open-source cap table tool available**—ideal for early-stage founders who need "a clean, hackable way to track ownership" without Carta/Pulley costs .
-
-
-
-- **[CapTablex](https://github.com/captablex/captablex)**  
-
-  OCF-compliant (Open Cap Format) capitalization table manager (license varies) . Built with **Elixir, Phoenix LiveView, and PostgreSQL** . Features: **Real-time dashboard**, **Stakeholder management**, **Dynamic stock class configuration** (security type, series, liquidation preferences, participation type, seniority rank), **Share issuance**, **Ownership breakdown**, **Transaction history**, **OCF export** (OCF 1.0.0 compliant JSON), and **Liquidation waterfall calculator** . **The most standards-compliant open-source cap table tool**, exporting to Open Cap Format for interoperability.
-
-
-
-- **[OpenCap Stack](https://github.com/Open-Cap-Stack/opencapstack)**  
-
-  Open-source cap table and equity management platform built for startups, growth-stage companies, and **AI agents** (MIT). **Every feature available via REST API and MCP server**—manage equity from code, from Claude, or any MCP-compatible agent . Schema standard: **OCTA v2.0 (Open Cap Table Alliance)**. Features: **Stakeholder management**, **ShareClass management**, **EquityGrant** (options, RSUs, warrants with vesting), **SAFENote** (valuation cap, discount), **Valuation409A**, **FundraisingRound** (dilution modeling), and **Document management**. **29 MCP tools** for Claude Code, Cursor, Windsurf . **The most AI-agent-ready open-source equity platform available.**
-
-
-
-- **[esop-ui (Neufund)](https://github.com/Neufund/esop-ui)**  
-
-  UI that handles ESOP contracts (license varies, 11 GitHub stars) . Part of Neufund's legal and smart contracts framework to implement Employee Stock Options Plans .
-
-
-
-- **[ESOP (Neufund)](https://github.com/Neufund/ESOP)**  
-
-  Legal and smart contracts framework to implement Employee Stock Options Plan (91 GitHub stars) .
-
-
-
-- **[optionsahoy-mcp](https://security.snyk.io/package/npm/optionsahoy-mcp)**  
-
-  Equity-compensation optimizer with MCP server + REST API (MIT) . Covers **ISO/AMT, NSO, RSU, QSBS, single-stock concentration, protective puts/collars, and equity-funding plans** with federal + 50-state + DC tax code . **The most tax-code-comprehensive open-source equity compensation tool available.** No direct vulnerabilities found in Snyk's database .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Vinyl Equity](https://github.com/topics/equity-management)** — Modern transfer agency providing equity, cap-table, and shareholder-management software for private and public companies. Covers registrar services, proxy and AGM management, and shareholder security .
-
-- **[Mantle](https://github.com/topics/equity-management)** — AI-powered data platform for alternative assets management. Mantle Equity is a cap table management platform for founders and CFOs covering fundraising .
-
-- **[Bitcoin-Powered Equity Platform](https://github.com/topics/equity-management)** — Open source Bitcoin-powered equity platform for tokenized shares, cap table management, and automated dividend distribution (TypeScript) .
-
-- Community **n8n** workflows for equity grant approval automation and vesting alert routing.
-
-
-
-**Frameworks for building custom systems**: Combine **Captable, Inc.** for full-featured cap table management with **Captan** for Git-native CLI workflows, **OpenCap Stack** for AI-agent integration via MCP, **CapTablex** for OCF-compliant interoperability, and **PostgreSQL** for persistence—creating a fully self-hosted, enterprise-grade equity compensation platform.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Equity compensation systems handling financial and tax data must comply with applicable securities regulations, tax codes, and data protection requirements.
-
-- **Open-source equity management is maturing but varies by use case.** Captable, Inc. provides comprehensive cap table management, fundraising, and e-signature . Captan provides Git-native CLI for early-stage founders . OpenCap Stack provides AI-agent integration via MCP . **No single open-source tool provides the full enterprise compliance and tax reporting of Carta or Shareworks.** Integration work is required.
-
-- **Git-native cap tables offer superior auditability.** Captan stores everything in a version-controlled JSON file—"a JSON in git will offer better auditability and version control than most commercial solutions out there" . Modeling different scenarios is as simple as creating a git branch.
-
-- **Tax modeling is critical for employee equity.** optionsahoy-mcp covers ISO/AMT, NSO, RSU, QSBS, and single-stock concentration with federal + 50-state + DC tax code . This level of tax-code coverage is rare in open-source tools.
-
-- Self-hosted open-source solutions require proper security hardening, data backup, and ongoing maintenance. Equity data is financially sensitive—access controls and audit trails are essential.
-
-
+# Awesome Employee Equity Compensation Managers
+
+<p align="center">
+  <img src="assets/equity-comp-banner.svg" alt="Awesome Employee Equity Compensation Managers Banner" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Employee-Equity-Compensation-Managers/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Employee-Equity-Compensation-Managers?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Employee-Equity-Compensation-Managers/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Employee-Equity-Compensation-Managers?style=social" alt="GitHub forks"></a>
+  <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+</p>
 
 ---
 
+A comprehensive, SEO-optimized curated index of **Employee Equity Compensation Managers**, **Cap Table Management Platforms**, and **Open-Source Equity Engineering Tools**. Designed for founders, Chief Financial Officers (CFOs), HR Total Rewards leaders, and fintech software engineers modeling dilution waterfalls, managing stock options (ISOs/NSOs), Restricted Stock Units (RSUs), Employee Stock Ownership Plans (ESOPs), and IRS 409A valuations.
 
+---
 
-**Made for HR teams, founders, finance leaders, and developers building transparent equity compensation solutions.**
+## Table of Contents
 
-Let's make Employee Equity Compensation Management more open, data-driven, and transparent.
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS / Hosted Equity Management Platforms](#saas--hosted-equity-management-platforms)
+- [Open-Source GitHub Projects & Standards](#open-source-github-projects--standards)
+- [Architecture & Standards Integration](#architecture--standards-integration)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+---
+
+## Sector Overview & Market Dynamics
+
+The global **Equity Compensation Management Software** market is currently estimated at approximately **$2.1 billion** (growing at a compound annual growth rate of ~**11.8% CAGR** toward $4.5B+ by the early 2030s). 
+
+The sector is **moderately fragmented**: while a handful of anchor category leaders dominate large-cap venture-backed tech and public enterprise markets (such as Carta and Morgan Stanley's Shareworks), geographic regulatory divergence (e.g., European ESOPs, UK EMI schemes, Asian cross-border equities) and emerging self-serve/open standards (such as Open Cap Format and agentic MCP stacks) have prevented a winner-take-all monopoly, leaving significant market share to specialized regional and developer-centric players.
+
+---
+
+## SaaS / Hosted Equity Management Platforms
+
+The following table compares leading commercial employee equity compensation and capitalization table management platforms. 
+
+> Sorted in descending order by company scale (valuation / enterprise acquisition value / ARR).
+
+| Platform | Company Scale (Valuation / Revenue) | Pricing (Starting Tier) | Free Tier / Trial Limits | Key Capabilities & Target Audience |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Carta](https://carta.com/)** | **~$7.4B – $8.5B Valuation** (~$500M+ ARR) | Paid plans start at **$2,800 / year** (entry floor ACV) | **Carta Launch:** Free forever for up to **25 stakeholders** & under **$1M raised** (excludes 409A valuations) | Dominant private-market cap table platform, 409A valuations, fund administration, employee equity portal, secondary liquidity, and comprehensive API suite. |
+| **[Shareworks by Morgan Stanley](https://www.shareworks.com/)** | **~$900M ($1.1B CAD)** (Acquired by Morgan Stanley) | Enterprise quote-based; typically starts at **$4,000 – $5,000+ / year** baseline | **14-day assisted enterprise pilot / trial** (no permanent free tier; tailored to private/public roadmap) | Enterprise-grade global stock plan administration (RSUs, PSUs, options, ESPPs) deeply tied into Morgan Stanley's global wealth management and banking network. |
+| **[Global Shares](https://www.globalshares.com/)** | **~$730M (€665M)** (Acquired by J.P. Morgan) | Multi-jurisdiction plans typically start from **€2,500 – €4,500 / year** | **30-day corporate pilot sandbox** with demo dataset (no permanent free plan) | Multi-national equity compensation administration, global tax withholding compliance, cross-border employee portals, and global custodian integrations. |
+| **[Ledgy](https://ledgy.com/)** | **~$80M – $100M Valuation** (Backed by NEA & Sequoia) | Core paid tier starts at **€3 – €4 / stakeholder / month** (~€2,500 – €3,500/year minimum) | **Launch Plan:** Free forever for up to **25 stakeholders** with core cap table & convertible tracking | European and global equity management with native GDPR compliance, IFRS 2 / ASC 718 reporting, investor KPI dashboards, and GraphQL API. |
+| **[Qapita](https://www.qapita.com/)** | **~$60M – $80M Valuation** ($25M+ Series B funding) | Paid startup plans start at **$1,000 / year** (or regional local equivalent) | **Starter Free Tier:** Free forever for up to **25 stakeholders** and basic share certificate issuances | Asia-Pacific & cross-border equity management leader; digitizes ESOPs, cap tables, workflow approvals, and secondary transactions across Singapore, India, and Southeast Asia. |
+| **[Cake Equity](https://www.cakeequity.com/)** | **~$30M – $40M Valuation** (VC-backed scaleup) | **Starter Plan:** **$80 / month** (billed annually at ~$960/yr, covers up to 30 stakeholders) | **Free Plan:** Free forever for your **first 5 stakeholders** (cap table, options, SAFEs) | Founder-friendly streamlined cap table, automated employee option pool vesting, 83(b) election workflows, and quick-issue SAFE agreements. |
+| **[Eqvista](https://eqvista.com/)** | **~$20M – $30M Enterprise Scale** (Bootstrapped & profitable) | **Premium Plan:** **$2 / stakeholder / month** (billed annually, min $24/stakeholder/yr); 409A valuations from $990 | **Freemium Plan:** Free forever for up to **20 stakeholders** with full core cap table tracking | Affordable cap table management, real-time equity modeling, waterfall dilution analysis, electronic share issuance, and low-cost certified 409A valuations. |
+| **[Captable.io](https://captable.io/)** | **Subsidiary of LTSE** (Long-Term Stock Exchange) | LTSE Equity paid upgrades start from **$90 / month** | **Captable.io Free:** **100% Free forever** for unlimited early-stage cap table management & round modeling | Community-standard web cap table tool by the Long-Term Stock Exchange; offers scenario dilution modeling, exit waterfall calculators, and stakeholder records. |
+| **[Certent](https://certent.com/)** | **Acquired by insightsoftware** (PE-backed portfolio) | Enterprise annual subscriptions typically start at **$3,500 – $6,000 / year** baseline | **30-day proof-of-concept trial** upon sales qualification (no free forever plan) | Enterprise equity compensation management, ASC 718 / IFRS 2 expense accounting, SEC automated disclosures, and private-to-public IPO readiness. |
+| **[Pulley](https://pulley.com/)** | **Private / Transitioned** (Historically YC backed) | Growth tiers historically started at **$1,200 – $3,500 / year** | **Historical 30-day trial** (no permanent free tier; legacy users transitioned to ecosystem partners) | Fast cap table management platform, dilution modeling, SAFE notes, and employee equity onboarding. |
+
+---
+
+## Open-Source GitHub Projects & Standards
+
+A curated catalog of open-source software, standards specifications, CLI utilities, and AI-agent protocols for managing equity compensation and capitalization tables.
+
+> Sorted in descending order by GitHub Star count.
+
+| Project & Repo Link | GitHub Stars | License | Primary Tech Stack | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[og-equity-compensation](https://github.com/jlevy/og-equity-compensation)** | [![GitHub stars](https://img.shields.io/github/stars/jlevy/og-equity-compensation?style=social&color=white)](https://github.com/jlevy/og-equity-compensation/stargazers) | CC-BY-SA-4.0 | Markdown / Research | The definitive open-source guide to stock options, RSUs, vesting schedules, AMT tax traps, secondary liquidity, and compensation negotiation for startup employees. |
+| **[Captable, Inc.](https://github.com/captableinc/captable)** | [![GitHub stars](https://img.shields.io/github/stars/captableinc/captable?style=social&color=white)](https://github.com/captableinc/captable/stargazers) | AGPL-3.0 | TypeScript, Next.js, Prisma, PostgreSQL | Full-featured open-source cap table and equity platform. Self-hostable Carta alternative featuring SAFE agreement signing, investor update portal, virtual data rooms, and e-signatures. |
+| **[Open-Cap-Format-OCF](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF)** | [![GitHub stars](https://img.shields.io/github/stars/Open-Cap-Table-Coalition/Open-Cap-Format-OCF?style=social&color=white)](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF/stargazers) | Apache-2.0 | JSON Schema, TypeScript | The global open standard for company capitalization data by the Open Cap Table Coalition (backed by Carta, Morgan Stanley, LTSE, and law firms). Ensures vendor-agnostic cap table portability. |
+| **[1984vc/cap-table](https://github.com/1984vc/cap-table)** | [![GitHub stars](https://img.shields.io/github/stars/1984vc/cap-table?style=social&color=white)](https://github.com/1984vc/cap-table/stargazers) | MIT | Spreadsheet / Model | Clean, auditable, open-source cap table and funding round dilution spreadsheet framework built by 1984 Ventures for founders and syndicates. |
+| **[ESOP (Neufund)](https://github.com/Neufund/ESOP)** | [![GitHub stars](https://img.shields.io/github/stars/Neufund/ESOP?style=social&color=white)](https://github.com/Neufund/ESOP/stargazers) | MIT | Solidity, JavaScript | Legal and Ethereum smart contracts framework implementing on-chain Employee Stock Option Plans with programmatic vesting, cliff tracking, and exercise triggers. |
+| **[cap-table-tool](https://github.com/tdavidson/cap-table-tool)** | [![GitHub stars](https://img.shields.io/github/stars/tdavidson/cap-table-tool?style=social&color=white)](https://github.com/tdavidson/cap-table-tool/stargazers) | MIT | JavaScript, Web | Interactive web cap table calculator and exit waterfall simulator for modeling common vs preferred liquidation preferences and payout hurdles. |
+| **[OpenCap Stack](https://github.com/Open-Cap-Stack/opencap)** | [![GitHub stars](https://img.shields.io/github/stars/Open-Cap-Stack/opencap?style=social&color=white)](https://github.com/Open-Cap-Stack/opencap/stargazers) | MIT | TypeScript, Node.js, REST, MCP | Modern open-source cap table and equity platform designed for AI agents. Provides 29 Model Context Protocol (MCP) tools for Claude Code, Cursor, and Windsurf to issue grants and query cap tables. |
+| **[tap-cap-table](https://github.com/transfer-agent-protocol/tap-cap-table)** | [![GitHub stars](https://img.shields.io/github/stars/transfer-agent-protocol/tap-cap-table?style=social&color=white)](https://github.com/transfer-agent-protocol/tap-cap-table/stargazers) | Apache-2.0 | TypeScript, Smart Contracts | Transfer Agent Protocol: On-chain cap table management synchronized with an off-chain SEC-compliant transfer agency database. |
+| **[esop-ui (Neufund)](https://github.com/Neufund/esop-ui)** | [![GitHub stars](https://img.shields.io/github/stars/Neufund/esop-ui?style=social&color=white)](https://github.com/Neufund/esop-ui/stargazers) | MIT | React, Web3 | Front-end web dashboard for employees and founders to view ESOP balances, exercise vested stock options, and monitor vesting smart contracts. |
+| **[safe-cap-table-simulator](https://github.com/fl0wo/safe-cap-table-simulator)** | [![GitHub stars](https://img.shields.io/github/stars/fl0wo/safe-cap-table-simulator?style=social&color=white)](https://github.com/fl0wo/safe-cap-table-simulator/stargazers) | MIT | Node.js, JavaScript | Fast simulator to calculate and visualize post-money SAFE conversion math, pre-money dilution, and option pool shuffle scenarios. |
+| **[ir-kit](https://github.com/howieyoung/ir-kit)** | [![GitHub stars](https://img.shields.io/github/stars/howieyoung/ir-kit?style=social&color=white)](https://github.com/howieyoung/ir-kit/stargazers) | MIT | TypeScript, Local-first | Local-first investor relations and cap table toolkit for founders: SAFE math, cap table records, update composer, and data-room playbooks for AI agents. |
+| **[optionsahoy-mcp](https://github.com/AlvisoOculus/optionsahoy-mcp)** | [![GitHub stars](https://img.shields.io/github/stars/AlvisoOculus/optionsahoy-mcp?style=social&color=white)](https://github.com/AlvisoOculus/optionsahoy-mcp/stargazers) | MIT | Python, MCP, REST | Deterministic US equity compensation tax engine for AI agents. Computes ISO/AMT exercise timing, NSO tax withholding, RSU sell-to-cover, QSBS (Section 1202), and multi-year hedging. |
+| **[CapTablex](https://github.com/captablex/captablex)** | [![GitHub stars](https://img.shields.io/github/stars/captablex/captablex?style=social&color=white)](https://github.com/captablex/captablex/stargazers) | MIT | Elixir, Phoenix LiveView, PostgreSQL | Real-time capitalization table manager strictly adhering to Open Cap Format (OCF 1.0.0). Features liquidation waterfalls and dynamic stock classes. |
+| **[Captan](https://github.com/acossta/captan)** | [![GitHub stars](https://img.shields.io/github/stars/acossta/captan?style=social&color=white)](https://github.com/acossta/captan/stargazers) | MIT | Python, CLI | Lightweight, Git-native CLI tool storing company cap tables in a single auditable JSON file (`captable.json`). Ideal for developer-first version-controlled cap tables. |
+| **[equity-comp-tax-python](https://github.com/AlvisoOculus/equity-comp-tax-python)** | [![GitHub stars](https://img.shields.io/github/stars/AlvisoOculus/equity-comp-tax-python?style=social&color=white)](https://github.com/AlvisoOculus/equity-comp-tax-python/stargazers) | MIT | Python | Copy-paste Python scripts and recipes for employee equity tax modeling: ISO exercise optimization, 83(b) tax savings calculation, and QSBS qualification checks. |
+
+---
+
+## Architecture & Standards Integration
+
+For developers and engineering teams designing modern in-house equity management infrastructure:
+
+- **Data Interoperability Standard**: Standardize cap table schemas using [Open Cap Format (OCF)](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF) to maintain export/import compatibility between commercial vendors (Carta, Ledgy) and self-hosted databases.
+- **GitOps for Ownership**: Combine [Captan](https://github.com/acossta/captan) with Git branching strategies to model prospective financing rounds, SAFE conversions, and option pool expansions directly via pull requests.
+- **Agentic Workflows (MCP)**: Leverage [OpenCap Stack](https://github.com/Open-Cap-Stack/opencap) and [optionsahoy-mcp](https://github.com/AlvisoOculus/optionsahoy-mcp) to connect Model Context Protocol (MCP) tools to Cursor, Claude Code, or autonomous finance copilots for instant equity intelligence and automated grant drafting.
+
+---
+
+## How to Contribute
+
+We welcome additions, corrections, and tool submissions!
+
+1. Fork this repository.
+2. Add your SaaS platform or open-source repository to `README.md` following the exact table structure.
+   - For SaaS: include exact starting pricing, free tier limits, company valuation/scale, and official website.
+   - For Open Source: include repo link, social white star badge linking to `/stargazers`, license, tech stack, and description.
+3. Submit a Pull Request with a clear description of the project.
+
+---
+
+## Disclaimer
+
+- This list is curated for informational and educational purposes only; it does not constitute financial, legal, or tax advice.
+- Equity compensation administration involves federal/state tax compliance (such as IRS 409A, ISO AMT calculations, and ASC 718 expense accounting) and international securities regulations. Consult licensed securities legal counsel and certified tax advisors when structuring equity incentive plans.
+
+---
+
+<p align="center">
+  <b>Curated with care for HR Total Rewards teams, startup founders, and fintech engineers worldwide.</b>
+</p>

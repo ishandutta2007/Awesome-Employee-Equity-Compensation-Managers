@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <!-- Dark Tech Gradient Background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+
+    <!-- Vibrant Gradient Accents -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85" />
+    </linearGradient>
+
+    <linearGradient id="glowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Filters for Glow -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      fill: #38bdf8;
+      letter-spacing: 0.8px;
+    }
+    .metric-value {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      fill: #f1f5f9;
+    }
+    .metric-label {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 11px;
+      fill: #64748b;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.25; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(1.08); }
+    }
+    @keyframes floatOrb1 {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-15px) translateX(12px); }
+    }
+    @keyframes floatOrb2 {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(18px) translateX(-15px); }
+    }
+    @keyframes dashCycle {
+      to { stroke-dashoffset: -120; }
+    }
+    .anim-orb-1 {
+      animation: floatOrb1 9s ease-in-out infinite;
+    }
+    .anim-orb-2 {
+      animation: floatOrb2 11s ease-in-out infinite;
+    }
+    .anim-dash {
+      stroke-dasharray: 8, 8;
+      animation: dashCycle 6s linear infinite;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="340" rx="16" fill="url(#bgGradient)" />
+
+  <!-- Ambient Light Orbs (Background layer) -->
+  <g class="anim-orb-1">
+    <circle cx="200" cy="80" r="140" fill="#38bdf8" opacity="0.12" filter="url(#softGlow)" />
+  </g>
+  <g class="anim-orb-2">
+    <circle cx="980" cy="220" r="160" fill="#a855f7" opacity="0.12" filter="url(#softGlow)" />
+  </g>
+  <circle cx="620" cy="40" r="110" fill="#6366f1" opacity="0.1" filter="url(#softGlow)" />
+
+  <!-- Background Grid Pattern -->
+  <g stroke="#334155" stroke-width="0.5" opacity="0.25">
+    <line x1="80" y1="0" x2="80" y2="340" />
+    <line x1="200" y1="0" x2="200" y2="340" />
+    <line x1="320" y1="0" x2="320" y2="340" />
+    <line x1="440" y1="0" x2="440" y2="340" />
+    <line x1="560" y1="0" x2="560" y2="340" />
+    <line x1="680" y1="0" x2="680" y2="340" />
+    <line x1="800" y1="0" x2="800" y2="340" />
+    <line x1="920" y1="0" x2="920" y2="340" />
+    <line x1="1040" y1="0" x2="1040" y2="340" />
+
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="130" x2="1200" y2="130" />
+    <line x1="0" y1="200" x2="1200" y2="200" />
+    <line x1="0" y1="270" x2="1200" y2="270" />
+  </g>
+
+  <!-- Animated Financial Curve / Stock Trajectory (Behind text/cards) -->
+  <path d="M 50 290 Q 250 250, 450 270 T 750 180 T 1000 120 T 1150 70" 
+        fill="none" 
+        stroke="url(#primaryGrad)" 
+        stroke-width="3" 
+        opacity="0.35" 
+        class="anim-dash" />
+
+  <!-- Accent Border Top Bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#primaryGrad)" />
+
+  <!-- Foreground Content: Header & Titles -->
+  <g transform="translate(60, 48)">
+    <!-- Category Badge -->
+    <rect x="0" y="0" width="220" height="28" rx="14" fill="#0369a1" fill-opacity="0.3" stroke="#0ea5e9" stroke-opacity="0.5" stroke-width="1" />
+    <circle cx="14" cy="14" r="4" fill="#38bdf8" />
+    <text x="26" y="18" class="badge-text">EQUITY &amp; CAP TABLE ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="0" y="72" class="title-text">Awesome Employee Equity Compensation</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="104" class="subtitle-text">Curated guide to SaaS leaders, open-source cap table tools, dilution modeling &amp; ESOP architectures</text>
+  </g>
+
+  <!-- Interactive Dynamic Metric Cards (Positioned in lower row) -->
+  <g transform="translate(60, 195)">
+    <!-- Card 1: SaaS Leaders -->
+    <rect x="0" y="0" width="245" height="96" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+    <circle cx="36" cy="36" r="16" fill="#38bdf8" fill-opacity="0.15" />
+    <path d="M30 36 L34 40 L42 32" stroke="#38bdf8" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="64" y="34" class="metric-value">Enterprise SaaS</text>
+    <text x="64" y="52" class="metric-label">Carta, Shareworks, Ledgy</text>
+    <text x="16" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#38bdf8">10 SaaS Titans Analyzed &rarr;</text>
+
+    <!-- Card 2: Open Source -->
+    <rect x="270" y="0" width="245" height="96" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+    <circle cx="306" cy="36" r="16" fill="#a855f7" fill-opacity="0.15" />
+    <path d="M300 32 L312 32 M306 26 L306 42 M299 39 L313 39" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" />
+    <text x="334" y="34" class="metric-value">Open Source &amp; Standards</text>
+    <text x="334" y="52" class="metric-label">OCF, Captable, Captan, OpenCap</text>
+    <text x="286" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#c084fc">GitHub Repos &amp; OCF Ready &rarr;</text>
+
+    <!-- Card 3: Dilution & Tax Modeling -->
+    <rect x="540" y="0" width="245" height="96" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+    <circle cx="576" cy="36" r="16" fill="#10b981" fill-opacity="0.15" />
+    <path d="M570 41 L575 33 L580 37 L586 28" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="604" y="34" class="metric-value">Tax &amp; Dilution Math</text>
+    <text x="604" y="52" class="metric-label">ISO, NSO, RSU, AMT &amp; QSBS</text>
+    <text x="556" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#34d399">Tax &amp; Valuation Intelligence &rarr;</text>
+
+    <!-- Card 4: Market Dynamics -->
+    <rect x="810" y="0" width="270" height="96" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+    <circle cx="846" cy="36" r="16" fill="#f59e0b" fill-opacity="0.15" />
+    <circle cx="846" cy="36" r="6" stroke="#fbbf24" stroke-width="2" fill="none" />
+    <path d="M846 30 L846 36 L850 38" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round" />
+    <text x="874" y="34" class="metric-value">Market Sector</text>
+    <text x="874" y="52" class="metric-label">$2.1B+ Global Size | 11.8% CAGR</text>
+    <text x="826" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#fbbf24">Moderately Fragmented &rarr;</text>
+  </g>
+
+  <!-- Corner Border Stroke Subtle -->
+  <rect x="1" y="1" width="1198" height="338" rx="15" fill="none" stroke="#475569" stroke-width="1" opacity="0.3" />
+</svg>

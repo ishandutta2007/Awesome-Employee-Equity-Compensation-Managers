@@ -65,7 +65,7 @@ The following table compares leading commercial employee equity compensation and
 
 A curated catalog of open-source software, standards specifications, CLI utilities, and AI-agent protocols for managing equity compensation and capitalization tables 🔓.
 
-> ⭐ Sorted in descending order by GitHub Stars_Count.
+> ⭐ Sorted in descending order by GitHub_Stars_Count.
 
 | Project & Repo Link 🔗 | GitHub_Stars ⭐ | License 📜 | Primary Tech Stack 💻 | Description 📝 |
 | :--- | :--- | :--- | :--- | :--- |

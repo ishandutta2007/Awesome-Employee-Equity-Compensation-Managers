@@ -158,7 +158,7 @@
     <path d="M30 36 L34 40 L42 32" stroke="#38bdf8" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
     <text x="64" y="34" class="metric-value">Enterprise SaaS</text>
     <text x="64" y="52" class="metric-label">Carta, Shareworks, Ledgy</text>
-    <text x="16" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#38bdf8">10 SaaS Titans Analyzed &rarr;</text>
+    <text x="16" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#38bdf8">10 SaaS Titans Analyzed &#8594;</text>
 
     <!-- Card 2: Open Source -->
     <rect x="270" y="0" width="245" height="96" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
@@ -166,7 +166,7 @@
     <path d="M300 32 L312 32 M306 26 L306 42 M299 39 L313 39" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" />
     <text x="334" y="34" class="metric-value">Open Source &amp; Standards</text>
     <text x="334" y="52" class="metric-label">OCF, Captable, Captan, OpenCap</text>
-    <text x="286" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#c084fc">GitHub Repos &amp; OCF Ready &rarr;</text>
+    <text x="286" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#c084fc">GitHub Repos &amp; OCF Ready &#8594;</text>
 
     <!-- Card 3: Dilution & Tax Modeling -->
     <rect x="540" y="0" width="245" height="96" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
@@ -174,7 +174,7 @@
     <path d="M570 41 L575 33 L580 37 L586 28" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
     <text x="604" y="34" class="metric-value">Tax &amp; Dilution Math</text>
     <text x="604" y="52" class="metric-label">ISO, NSO, RSU, AMT &amp; QSBS</text>
-    <text x="556" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#34d399">Tax &amp; Valuation Intelligence &rarr;</text>
+    <text x="556" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#34d399">Tax &amp; Valuation Intelligence &#8594;</text>
 
     <!-- Card 4: Market Dynamics -->
     <rect x="810" y="0" width="270" height="96" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
@@ -183,7 +183,7 @@
     <path d="M846 30 L846 36 L850 38" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round" />
     <text x="874" y="34" class="metric-value">Market Sector</text>
     <text x="874" y="52" class="metric-label">$2.1B+ Global Size | 11.8% CAGR</text>
-    <text x="826" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#fbbf24">Moderately Fragmented &rarr;</text>
+    <text x="826" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#fbbf24">Moderately Fragmented &#8594;</text>
   </g>
 
   <!-- Corner Border Stroke Subtle -->
